@@ -19,11 +19,22 @@ $(document).ready(function(){
     });
     
     
-    /*if(mouseDown){
-    $(".unit").hover(function(){
+    /*$('.unit').mousedown(function () {
+    $(this).css("background", "black");
+    timeout = setInterval(function () {
         $(this).css("background", "black");
-    });
-    }
+    }, 500);
+
+    return false;
+});
+$('.unit').mouseup(function () {
+    clearInterval(timeout);
+    return false;
+});
+$('.unit').mouseout(function () {
+    clearInterval(timeout);
+    return false;
+});
     */
     
     //function to erase
